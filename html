@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    //1
+    let numero = prompt("digite o numero")
+let des = (numero * 0.15)
+let total = numero-des
+console.log(total)
+</script>
+
+
+<script>
+    //2
+let numero1 = prompt("digite numero1")
+let numero2 = prompt("digite numero2")
+let divi = numero1/numero2
+console.log(divi)
+</script>
+
+
+<script>
+    //3
+let idade = prompt("quantos anos voce tem?")
+let dias = idade*365
+console.log(dias,"dias")
+</script>
+
+
+<script>
+    //4
+let km = prompt(" quantos km percorridos")
+let litros = prompt("quanros litros gastos")
+let media =litros/km
+console.log("media km/l",media)
+</script>
+
+
+
+
+<script>
+    //5
+    let letra = prompt("qual sua letra")
+    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u")
+{console.log("vogal")}
+else
+(console.log("consoante"))
+</script>
+
+
+<script>
+    //6
+    let numero = parseInt(prompt("escolha um numero de 1 a 7"))
+  if (numero === 1) {
+    alert("Domingo")
+  } else if (numero === 2) {
+    alert("Segunda-feira")
+  } else if (numero === 3) {
+    alert("Terça-feira")
+  } else if (numero === 4) {
+    alert("Quarta-feira")
+  } else if (numero === 5) {
+    alert("Quinta-feira")
+  } else if (numero === 6) {
+    alert("Sexta-feira")
+  } else if (numero === 7) {
+    alert("Sábado")
+  } else {
+    alert("Número inválido")
+  }
+</script>
+
+
+<script>
+  // exercicio 07
+  let num1 = parseInt(prompt("digite o primeiro numero"))
+  let num2 = parseInt(prompt("digite o segundo numero"))
+
+  if (num1 > num2) {
+    alert("o maior e " + num1)
+  } else if (num2 > num1) {
+    alert("o maior e " + num2)
+  } else {
+    alert("os numeros sao iguais")
+  }
+</script>
+
+<script>
+  // exercicio 08
+  let num = parseInt(prompt("digite um numero"))
+
+  if (num % 2 === 0) {
+    alert("par")
+  } else {
+    alert("impar")
+  }
+</script>
+
+<script>
+  // exercicio 09
+  let resultado = prompt("v, e ou d?")
+
+  if (resultado === "v") {
+    alert("3 pontos")
+  } else if (resultado === "e") {
+    alert("1 ponto")
+  } else if (resultado === "d") {
+    alert("0 pontos")
+  } else {
+    alert("entrada invalida")
+  }
+</script>
+
+<script>
+  // exercicio 10
+  let idade = parseInt(prompt("digite a idade do nadador"))
+
+  if (idade >= 5 && idade <= 7) {
+    alert("infantil a")
+  } else if (idade >= 8 && idade <= 10) {
+    alert("infantil b")
+  } else if (idade >= 11 && idade <= 13) {
+    alert("juvenil a")
+  } else if (idade >= 14 && idade <= 17) {
+    alert("juvenil b")
+  } else if (idade >= 18) {
+    alert("adulto")
+  } else {
+    alert("idade invalida")
+  }
+</script>
+
+<script>
+  // exercicio 11
+  let angulo = parseFloat(prompt("digite a medida do angulo"))
+
+  if (angulo === 0 || angulo === 180) {
+    alert("angulo raso")
+  } else if (angulo === 360) {
+    alert("angulo completo")
+  } else if (angulo > 0 && angulo < 90) {
+    alert("angulo agudo")
+  } else if (angulo === 90) {
+    alert("angulo reto")
+  } else if (angulo > 90 && angulo < 180) {
+    alert("angulo otuso")
+  } else if (angulo > 180 && angulo < 360) {
+    alert("angulo concavo")
+  } else {
+    alert("angulo invalido")
+  }
+</script>
+
+<script>
+  // exercicio 12
+  let codigo = parseInt(prompt("digite o codigo do produto (200-203)"))
+  let quantidade = parseInt(prompt("digite a quantidade"))
+
+  let preco = 0
+  let produto = ""
+
+  if (codigo === 200) {
+    preco = 25
+    produto = "camiseta"
+  } else if (codigo === 201) {
+    preco = 35
+    produto = "calca"
+  } else if (codigo === 202) {
+    preco = 45
+    produto = "jaqueta"
+  } else if (codigo === 203) {
+    preco = 55
+    produto = "saia"
+  } else {
+    alert("codigo invalido")
+  }
+
+  if (preco > 0) {
+    let total = preco * quantidade
+    alert(produto + " - quantidade: " + quantidade + " - total: r$ " + total.toFixed(2))
+  }
+</script>
+</body>
+</html>
